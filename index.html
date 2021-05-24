@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--========== BOX ICONS ==========-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!--========== CSS ==========-->
+	<link rel="stylesheet" href="assets/css/styles.css">
+
+	<title>E-VACCINATION</title>
+</head>
+
+<body>
+	<!--========== HEADER ==========-->
+	<header class="l-header" id="header">
+		<nav class="nav bd-container">
+			<a href="#" class="nav__logo">Aakash E-VACCINATION</a>
+
+			<div class="nav__menu" id="nav-menu">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a href="#home" class="nav__link active-link">
+							<i class="bx bx-home nav__icon"></i>Home
+						</a>
+					</li>
+					<li class="nav__item">
+						<a href="#cowin" class="nav__link">
+							<i class="bx bxs-face-mask nav__icon"></i>Vaccination
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="nav__toggle" id="nav-toggle">
+				<i class="bx bx-grid-alt"></i>
+			</div>
+		</nav>
+	</header>
+
+	<main class="l-main bd-container">
+		<!-- All elements within this div, is generated in PDF -->
+		<div class="resume" id="area-cv">
+			<div class="resume__left">
+				<!--========== HOME ==========-->
+				<section class="home" id="home">
+					<div class="home__container section bd-grid">
+						<div class="home__data bd-grid">
+							<img src="assets/img/ad.jpeg" alt="" class="home__img">
+
+							<h1 class="home_title">AAKASH <b>DAS</b></h1>
+							<h3 class="home__profession">System Engineer at TCS Digital | 5⭐ at Hackerrank | Competitive
+								Coder</h3>
+
+						</div>
+						<div class="home_address bd-grid">
+							<span class="home__information">
+								<i class="bx bx-map home__icon"></i> Durgapur, West Bengal - 713213
+							</span>
+							<span class="home__information">
+								<i class="bx bx-envelope home__icon"></i> 1705841@kiit.ac.in
+							</span>
+							<span class="home__information">
+								<i class="bx bx-phone home__icon"></i> +91-94349 51110
+							</span>
+						</div>
+					</div>
+					<!-- Theme change button -->
+					<i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
+
+					<!-- Button to generate and download the pdf. Available for desktop. -->
+					<!--   <i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i>-->
+				</section>
+
+				<!--========== SOCIAL ==========-->
+				<section class="social section">
+					<h2 class="section-title">SOCIAL</h2>
+
+					<div class="social__container bd-grid">
+						<a href="https://wa.me/qr/YZJSUR2T2F5OH1" target="_blank" class="social__link">
+							<i class="bx bxl-whatsapp social__icon"></i> @aakash
+						</a>
+						<a href="https://www.linkedin.com/in/iamad99/" target="_blank" class="social__link">
+							<i class="bx bxl-linkedin-square social__icon"></i> @iamad99
+						</a>
+						<a href="https://github.com/agendaxd276" target="_blank" class="social__link">
+							<i class="bx bxl-github social__icon"></i> @agendaxd276
+						</a>
+					</div>
+				</section>
+
+
+			</div>
+
+			<div class="resume__right">
+				<section class="cowin section" id="cowin">
+					<h2 class="section-title">BOOKING VACCINATION</h2>
+					<form>
+						<div class="form-group">
+							<div class="input-group">
+								<label class="btn btn-success " for="district-input"
+									style="margin-right:2%">District</label>
+								<input type="text" class="form-control" list="district" id="district-input"
+									placeholder="Type to search...">
+							</div>
+							<datalist id="district"></datalist>
+						</div>
+						<div class="form-group">
+							<div class="input-group">
+								<label class="btn btn-success" for="pincode-input"
+									style="margin-right:2%">Pincodes</label>
+								<input type="text" class="form-control" id="pincode-input"
+									placeholder="Comma separated...">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="input-group">
+								<label class="btn btn-success" style="margin-right:2%">Age</label>
+								<input type="radio" id="a-18" name="age" value="a-18" class="btn-check"
+									style="margin-right:2%" checked><label for="a-18" class="btn btn-outline-dark"
+									style="margin-right:2%">18+</label>
+								<input type="radio" id="a-45" name="age" value="a-45" class="btn-check"
+									style="margin-right:2%"><label for="a-45" class="btn btn-outline-dark"
+									style="margin-right:2%">45+</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="input-group">
+								<label class="btn btn-success" style="margin-right:2%">Dose</label>
+								<input type="radio" id="d-1" name="dose" value="d-1" class="btn-check"
+									style="margin-right:2%" checked><label for="d-1" class="btn btn-outline-dark"
+									style="margin-right:2%">1<sup>st</sup></label>
+								<input type="radio" id="d-2" name="dose" value="d-2" class="btn-check"
+									style="margin-right:2%"><label for="d-2" class="btn btn-outline-dark"
+									style="margin-right:2%">2<sup>nd</sup></label>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="input-group">
+								<label class="btn btn-success" style="margin-right:2%">Vaccine</label>
+								<input type="radio" id="v-any" name="vaccine" value="v-any" class="btn-check"
+									style="margin-right:2%" checked><label for="v-any" id="v-any-label"
+									class="btn btn-outline-dark" style="margin-right:2%">Any</label>
+								<input type="radio" id="v-covishield" name="vaccine" value="v-covishield"
+									class="btn-check" style="margin-right:2%"><label for="v-covishield"
+									class="btn btn-outline-dark" style="margin-right:2%">Covishield</label>
+								<input type="radio" id="v-covaxin" name="vaccine" value="v-covaxin" class="btn-check"
+									style="margin-right:2%"><label for="v-covaxin" class="btn btn-outline-dark"
+									style="margin-right:2%">Covaxin</label>
+								<input type="radio" id="v-sputnik-v" name="vaccine" value="v-sputnik-v"
+									class="btn-check" style="margin-right:2%"><label for="v-sputnik-v"
+									class="btn btn-outline-dark" style="margin-right:2%">Sputnik V</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="input-group">
+								<label class="btn btn-success" style="margin-right:2%">Fees</label>
+								<input type="radio" id="f-free" name="fees" value="f-free" class="btn-check"
+									style="margin-right:2%" checked><label for="f-free" class="btn btn-outline-dark"
+									style="margin-right:2%">Free</label>
+								<input type="radio" id="f-paid" name="fees" value="f-paid" class="btn-check"
+									style="margin-right:2%"><label for="f-paid" class="btn btn-outline-dark"
+									style="margin-right:2%">Paid</label>
+								<input type="radio" id="f-any" name="fees" value="f-any" class="btn-check"
+									style="margin-right:2%"><label for="f-any" class="btn btn-outline-dark"
+									style="margin-right:2%">Any</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="input-group">
+								<label class="btn btn-success" for="date" style="margin-right:2%">Date</label>
+								<input type="date" id="date" class="form-control">
+							</div>
+						</div>
+
+
+						<div class="form-group" id="mobile-div">
+							<div class="input-group">
+								<label for="mobile" class="btn btn-success" style="margin-right:2%">Login</label>
+								<input type="number" id="mobile" class="form-control"
+									placeholder="Enter 10 digit mobile...(Without +91)">
+								<input type="button" class="btn btn-success" id="get-otp" value="Get OTP">
+							</div>
+						</div>
+						<div class="form-group" id="otp-div">
+							<div class="input-group">
+								<label for="otp" class="btn btn-success" style="margin-right:2%">OTP</label>
+								<input type="number" id="otp" class="form-control" placeholder="Enter OTP..."
+									autocomplete="off">
+								<input type="button" class="btn btn-success" id="confirm-otp" value="Login">
+							</div>
+						</div>
+						<div class="form-group" id="login-div">
+							<div class="input-group">
+								<label class="btn btn-success" style="margin-right:2%">Logged In</label>
+								<button class="btn btn-warning" id="expiring" style="margin-right:2%">session expiring
+									soon</button>
+								<input type="button" class="btn btn-outline-dark" id="relogin" value="Relogin">
+							</div>
+						</div>
+						<div class="form-group" id="ben-div">
+							<div class="input-group">
+								<label class="btn btn-success" style="margin-right:2%">Beneficiaries</label>
+								<button id="ben" value="ben" class="btn btn-warning" style="margin-right:2%">Neel
+									Patel</button>
+							</div>
+						</div>
+						<div class="form-group" id="logout-div">
+							<div class="input-group">
+								<input type="button" class="btn btn-danger" style="margin-right:2%" id="logout"
+									value="Logout">
+							</div>
+						</div>
+
+						<div class="form-group" id="fetch-div">
+							<div class="input-group">
+								<label class="btn btn-success" id="fetch-label" style="margin-right:2%">Fetch Available
+									Slots</label>
+								<input type="button" class="btn btn-outline-dark" id="start-fetch" value="Start">
+							</div>
+						</div>
+						<div class="form-group" id="fetching-div">
+							<div class="input-group">
+								<label class="btn btn-success" id="fetching-label">Fetching Slots</label>
+								<input type="button" class="btn btn-outline-dark" id="stop-fetch" value="Stop">
+							</div>
+						</div>
+						<div class="form-group" id="captcha-div">
+							<div class="input-group">
+								<label class="btn btn-success" for="captcha-input" style="margin-right:2%">Captcha</label>
+								<div id="captcha" style="border: 1px solid darkgray"></div>
+								<input type="text" id="captcha-input" class="form-control"
+									placeholder="Enter captcha..." autocomplete="off">
+								<input type="button" class="btn btn-succes" id="book" value="Book">
+							</div>
+						</div>
+
+
+						<div id="booking-div" class="container pt-3"></div>
+						<div id="results" class="container pt-3"></div>
+						<!--<div class="pt-4">
+								<ul class="list-group-item mb-0">
+									This may be useful if you are registered for the vaccine on <a href="https://selfregistration.cowin.gov.in/" target="_blank">Co-WIN</a> and are struggling to find a center with an available slot in your district.<br>
+									Once you find an available slot, book the slots from the official portal for <a href="https://selfregistration.cowin.gov.in/" target="_blank">Co-WIN</a> Registration.
+								</ul>
+								<ul class="list-group-item mb-0"><i>Features:</i> Saving your state and district, removing unavailable slots, alert on finding an available slot, the rest is same as the original <a href="https://selfregistration.cowin.gov.in/" target="_blank">Co-WIN</a> app.</ul>
+								<ul class="list-group-item mb-0"><i>Implementation:</i> Created using the <a href="https://apisetu.gov.in/public/marketplace/api/cowin" target="_blank">Co-WIN Public API</a>. This tool is open source, you can find the code here <i><a href="https://github.com/neelpy/cowin" target="_blank">[link]</a></i>.</ul>
+								<ul class="list-group-item mb-0"><i>Known bugs:</i> The data might be inconsistent with the actual website, because the public API gives slightly older cached data.</ul>
+								<ul class="list-group-item mb-0"><i>Feedback:</i> If you find any bugs or have any suggestions to improve the tool, you may report them here <i><a href="https://docs.google.com/forms/d/e/1FAIpQLScEH36ntcFE1cseCneS_zeauw_8nEZktwvVV6OEjLhH81pDUw/viewform?usp=sf_link" target="_blank">[link]</a></i></ul>
+							</div>-->
+
+					</form>
+
+					<div id="booking-div" class="container pt-3"></div>
+					<div id="results" class="container pt-3"></div>
+				</section>
+			</div>
+		</div>
+	</main>
+	<a href="#" class="scrolltop" id="scroll-top">
+		<i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+	</a>
+
+	<!--========== SCROLL TOP ==========-->
+	<a href="#" class="scrolltop" id="scroll-top">
+		<i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+	</a>
+
+	<!--========== MAIN JS ==========-->
+	<script src="assets/js/main.js"></script>
+
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="assets/js/districts.js"></script>
+	<script src="assets/js/init.js"></script>
+	<script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
